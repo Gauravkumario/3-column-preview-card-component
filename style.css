@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*font-family: 'Big Shoulders Display', cursive;*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+#container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#main{
+	width: 55%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius:12px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@media (max-width: 500px){
+	#main{
+		height: 1500px;
+		margin: 22px;
+		position: relative;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#first{
+		border-radius: 12px 12px 0px 0px !important;
+	}
+	#last{
+		border-radius: 0px 0px 12px 12px !important;
+	}
+}
+
+#first{
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 12px 0px 0px 12px;
+}
+
+#mid{
+	background-color: hsl(184, 100%, 22%);
+}
+
+#last{
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0px 12px 12px 0px;
+}
+
+.colm{
+	width: 350px;
+	height: 500px;
+	padding: 42px;
+	padding-bottom: 16px !important;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-around;
+}
+img{
+	margin-top: -25spx;
+}
+.colm >h1{
+	color: #ffffff;
+	font-size: 40px;
+	margin-top: -35px;
+	margin:;
+	letter-spacing: 1px;
+	font-family: 'Big Shoulders Display', cursive;
+}
+
+.colm >p{
+	color: hsla(0, 0%, 100%, 0.75);
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	margin-top: -40px;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	height: 50px;
+	width: 144px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 22px;
+}
+#first>button{
+	color: hsl(31, 77%, 52%);
+}
+#mid>button{
+	color: hsl(184, 100%, 22%);
+}
+#last>button{
+	color: hsl(179, 100%, 13s%);
+}
+
+#first>button:hover{
+	background-color: hsl(31, 77%, 52%);
+	color: hsl(0, 0%, 95%);
+	border: #fff solid thin;
+	cursor: pointer;
+}
+#mid>button:hover{
+	background-color: hsl(184, 100%, 22%);
+	color: hsl(0, 0%, 95%);
+	border: #fff solid thin;
+	cursor: pointer;
+}
+#last>button:hover{
+	background-color: hsl(179, 100%, 13%);
+	color: hsl(0, 0%, 95%);
+	border: #fff solid thin;
+	cursor: pointer;
+}
+
